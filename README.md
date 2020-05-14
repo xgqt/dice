@@ -38,7 +38,7 @@ Output:
 
 ## Info
 
-Bugs: <https://gitlab.com/xgqt/dice/>
-Home: <https://gitlab.com/xgqt/dice/>
-Copyright (c) 2020, XGQT
-Licensed under the GNU GPL v3 license
+- Bugs: <https://gitlab.com/xgqt/dice/>
+- Home: <https://gitlab.com/xgqt/dice/>
+- Copyright (c) 2020, XGQT
+- Licensed under the GNU GPL v3 license
