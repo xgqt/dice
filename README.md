@@ -21,7 +21,7 @@ dice [OPTION]... [NUMBER]
 - -0     / --none    - Only generate numbers
 
 
-## Exmaples
+## Examples
 
 ```bash
 ./dice
