@@ -199,5 +199,8 @@ int main ( int argc, char ** argv )
         }
 
 
+    free(die_face);
+    
+    
     return 0;
 }
