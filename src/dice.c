@@ -176,7 +176,7 @@ int main ( int argc, char ** argv )
                 }
 
             // Small dice
-            if ( small_roll == 1 )
+            if ( small_roll )
                 {
                     for ( int i = 0; i < rolls; i++ )
                         {
@@ -185,7 +185,7 @@ int main ( int argc, char ** argv )
                     printf("\n");
                 }
             // Only numbers
-            else if ( none_roll == 1 )
+            else if ( none_roll )
                 {
                     for ( int i = 0; i < rolls; i++ )
                         {
