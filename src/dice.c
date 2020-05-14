@@ -77,7 +77,6 @@ static char * version =
     "dice version 1.0, (c) 2020 XGQT\n";
 
 
-// Need a better generator!
 int generate_number ( void )
 {
     // rand() % (max_number + 1 - minimum_number) + minimum_number
