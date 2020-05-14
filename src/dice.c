@@ -76,7 +76,7 @@ static char * version =
 
 
 // Need a better generator!
-int genareate_number ( void )
+int generate_number ( void )
 {
     // rand() % (max_number + 1 - minimum_number) + minimum_number
     return rand() % 6 + 1;
@@ -85,7 +85,7 @@ int genareate_number ( void )
 
 void roll_dice ( void )
 {
-    int random_int = genareate_number();
+    int random_int = generate_number();
 
     if ( random_int == 1 )
         {
@@ -180,7 +180,7 @@ int main ( int argc, char ** argv )
                 {
                     for ( int i = 0; i < rolls; i++ )
                         {
-                            printf( " [%d]", genareate_number() );
+                            printf( " [%d]", generate_number() );
                         }
                     printf("\n");
                 }
@@ -189,7 +189,7 @@ int main ( int argc, char ** argv )
                 {
                     for ( int i = 0; i < rolls; i++ )
                         {
-                            printf( " %d", genareate_number() );
+                            printf( " %d", generate_number() );
                         }
                     printf("\n");
                 }
