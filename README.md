@@ -3,7 +3,7 @@
 
 ## About
 
-    A small utility to roll some dice
+A small utility to roll some dice
 
 
 ## Usage
@@ -12,33 +12,33 @@
 
 
 ##  Options
-        -h                  Print short help
-               --help       Print long help
-        -v     --version    Print version number
-        -s     --small      Roll small dice
-        -0     --none       Only generate numbers
+    -h                  Print short help
+           --help       Print long help
+    -v     --version    Print version number
+    -s     --small      Roll small dice
+    -0     --none       Only generate numbers
 
 
 ## Exmaples
 
-    ```bash
-        ./dice
-    ```
+```bash
+    ./dice
+```
 
-    Output:
+Output:
 
-    ```fundamental
-         _______
-        | o     |
-        |   o   |
-        |     o |
-        '-------'
-    ```
+```fundamental
+     _______
+    | o     |
+    |   o   |
+    |     o |
+    '-------'
+```
 
 
 ## Info
 
-    Bugs: <https://gitlab.com/xgqt/dice/>
-    Home: <https://gitlab.com/xgqt/dice/>
-    Copyright (c) 2020, XGQT
-    Licensed under the GNU GPL v3 license
+Bugs: <https://gitlab.com/xgqt/dice/>
+Home: <https://gitlab.com/xgqt/dice/>
+Copyright (c) 2020, XGQT
+Licensed under the GNU GPL v3 license
