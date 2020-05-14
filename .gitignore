@@ -1,0 +1,12 @@
+**/*.rs.bk
+*.egg-info/
+*.swp
+,*
+.idea/
+.vscode/
+.~lock.*
+/target
+__pycache__/
+build/
+dist/
+dice
