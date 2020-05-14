@@ -156,7 +156,7 @@ int main ( int argc, char ** argv )
                     // Assume other args are numbers
                     else
                         {
-                            rolls = atoi(argv[i]);
+                            rolls = strtol( argv[i], NULL, 10 );
                         }
                 }
 
