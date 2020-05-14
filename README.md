@@ -8,31 +8,33 @@ A small utility to roll some dice
 
 ## Usage
 
-    dice [OPTION]... [NUMBER]
+```fundamental
+dice [OPTION]... [NUMBER]
+```
 
 
 ##  Options
-    -h                  Print short help
-           --help       Print long help
-    -v     --version    Print version number
-    -s     --small      Roll small dice
-    -0     --none       Only generate numbers
+- -h                 - Print short help
+- --help             - Print long help
+- -v     / --version - Print version number
+- -s     / --small   - Roll small dice
+- -0     / --none    - Only generate numbers
 
 
 ## Exmaples
 
 ```bash
-    ./dice
+./dice
 ```
 
 Output:
 
 ```fundamental
-     _______
-    | o     |
-    |   o   |
-    |     o |
-    '-------'
+ _______
+| o     |
+|   o   |
+|     o |
+'-------'
 ```
 
 
