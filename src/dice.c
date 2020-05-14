@@ -52,6 +52,8 @@ static char * dice_6 =
     " | o   o | \n"
     " '-------' \n";
 
+static char ** die_face = NULL;
+
 static char * long_help =
     "Usage: dice [OPTION]... [NUMBER]\n"
     "Rolls some dice. \n"
@@ -85,32 +87,21 @@ int generate_number ( void )
 
 void roll_dice ( void )
 {
-    int random_int = generate_number();
+   size_t random_int = generate_number() - 1;
 
-    if ( random_int == 1 )
-        {
-            printf("%s", dice_1);
-        }
-    else if ( random_int == 2 )
-        {
-            printf("%s", dice_2);
-        }
-    else if ( random_int == 3 )
-        {
-            printf("%s", dice_3);
-        }
-    else if ( random_int == 4 )
-        {
-            printf("%s", dice_4);
-        }
-    else if ( random_int == 5 )
-        {
-            printf("%s", dice_5);
-        }
-    else if ( random_int == 6 )
-        {
-            printf("%s", dice_6);
-        }
+   if(die_face == NULL)
+       {
+           die_face = malloc( sizeof( char* ) * 6 );
+
+           die_face[0] = dice_1;
+           die_face[1] = dice_2;
+           die_face[2] = dice_3;
+           die_face[3] = dice_4;
+           die_face[4] = dice_5;
+           die_face[5] = dice_6;
+       }
+
+    puts( die_face[random_int] );
 }
 
 
