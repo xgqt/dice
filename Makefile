@@ -37,7 +37,7 @@ install:
 	test -d $(INSTMAN) || mkdir -p $(INSTMAN)
 
 	install -m 0755 $(BIN) $(INSTBIN)
-	install -m 0644 $(MANPAGE) $(INSTMAN)
+	install -m 0644 $(MAN) $(INSTMAN)
 
 
 uninstall:
