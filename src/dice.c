@@ -86,7 +86,7 @@ int genareate_number ( void )
 void roll_dice ( void )
 {
     int random_int = genareate_number();
-    
+
     if ( random_int == 1 )
         {
             printf("%s", dice_1);
@@ -115,7 +115,7 @@ void roll_dice ( void )
 
 
 // Put it all together
-int main( int argc, char ** argv )
+int main ( int argc, char ** argv )
 {
 
     int rolls      = 1;
@@ -149,7 +149,7 @@ int main( int argc, char ** argv )
                             printf( "%s", version );
                             exit(0);
                         }
-            
+
                     // Small dice
                     else if ( ( ! strcmp(argv[i], "-s") ) || ( ! strcmp(argv[i], "--small") ) )
                         {
@@ -206,7 +206,7 @@ int main( int argc, char ** argv )
         {
             roll_dice();
         }
-    
-    
+
+
     return 0;
 }
