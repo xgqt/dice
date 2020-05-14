@@ -125,7 +125,7 @@ int main ( int argc, char ** argv )
                     // Help
                     if ( ! strcmp(argv[i], "-h") )
                         {
-                            printf( "%s", short_help );
+                            puts( short_help );
                             exit(0);
                         }
                     else if ( ! strcmp(argv[i], "--help") )
@@ -137,7 +137,7 @@ int main ( int argc, char ** argv )
                     // Version
                     else if ( ( ! strcmp(argv[i], "-v") ) || ( ! strcmp(argv[i], "--version") ) )
                         {
-                            printf( "%s", version );
+                            puts( version );
                             exit(0);
                         }
 
