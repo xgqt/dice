@@ -193,7 +193,7 @@ int main( int argc, char ** argv )
                         }
                     printf("\n");
                 }
-            // Only numbers
+            // Normal (big) dice
             else
                 {
                     for ( int i = 0; i < rolls; i++ )
