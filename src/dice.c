@@ -77,20 +77,20 @@ static char * version =
     "dice version 1.0, (c) 2020 XGQT\n";
 
 
-int generate_number ( void )
+int generate_number( void )
 {
     // rand() % (max_number + 1 - minimum_number) + minimum_number
     return rand() % 6 + 1;
 }
 
 
-void roll_dice ( void )
+void roll_dice( void )
 {
    size_t random_int = generate_number() - 1;
 
-   if(die_face == NULL)
+   if ( die_face == NULL )
        {
-           die_face = malloc( sizeof( char* ) * 6 );
+           die_face = malloc( sizeof( char * ) * 6 );
 
            die_face[0] = dice_1;
            die_face[1] = dice_2;
@@ -105,53 +105,47 @@ void roll_dice ( void )
 
 
 // Put it all together
-int main ( int argc, char ** argv )
+int main( int argc, char ** argv )
 {
-
     int rolls      = 1;
 
     int small_roll = 0;
     int none_roll  = 0;
 
     // Seed
-    srand( time(NULL) );
+    srand( time( NULL ) );
 
 
     if ( argc >= 2 )
         {
-            for ( int i = 0; i < argc; ++i)
+            for ( int i = 0; i < argc; ++ i )
                 {
                     // Help
-                    if ( ! strcmp(argv[i], "-h") )
+                    if ( ! strcmp( argv[i], "-h" ) )
                         {
                             puts( short_help );
-                            exit(0);
+                            exit( 0 );
                         }
-                    else if ( ! strcmp(argv[i], "--help") )
+                    else if ( ! strcmp( argv[i], "--help" ) )
                         {
                             printf( "%s", long_help );
-                            exit(0);
+                            exit( 0 );
                         }
-
                     // Version
-                    else if ( ( ! strcmp(argv[i], "-v") ) || ( ! strcmp(argv[i], "--version") ) )
+                    else if ( ( ! strcmp( argv[i], "-v" ) ) || ( ! strcmp( argv[i], "--version" ) ) )
                         {
                             puts( version );
-                            exit(0);
+                            exit( 0 );
                         }
-
-                    // Small dice
-                    else if ( ( ! strcmp(argv[i], "-s") ) || ( ! strcmp(argv[i], "--small") ) )
+                    // Dice size selection
+                    else if ( ( ! strcmp( argv[i], "-s" ) ) || ( ! strcmp( argv[i], "--small" ) ) )
                         {
                             small_roll = 1;
                         }
-
-                    // Only numbers
-                    else if ( ( ! strcmp(argv[i], "-0") ) || ( ! strcmp(argv[i], "--none") ) )
+                    else if ( ( ! strcmp( argv[i], "-0" ) ) || ( ! strcmp( argv[i], "--none" ) ) )
                         {
                             none_roll = 1;
                         }
-
                     // Assume other args are numbers
                     else
                         {
@@ -168,38 +162,38 @@ int main ( int argc, char ** argv )
             // Small dice
             if ( small_roll )
                 {
-                    for ( int i = 0; i < rolls; i++ )
+                    for ( int i = 0; i < rolls; i ++ )
                         {
                             printf( " [%d]", generate_number() );
                         }
-                    printf("\n");
+                    printf( "\n" );
                 }
             // Only numbers
             else if ( none_roll )
                 {
-                    for ( int i = 0; i < rolls; i++ )
+                    for ( int i = 0; i < rolls; i ++ )
                         {
                             printf( " %d", generate_number() );
                         }
-                    printf("\n");
+                    printf( "\n" );
                 }
             // Normal (big) dice
             else
                 {
-                    for ( int i = 0; i < rolls; i++ )
+                    for ( int i = 0; i < rolls; i ++ )
                         {
                             roll_dice();
                         }
                 }
         }
+    // Default roll
     else
         {
             roll_dice();
         }
 
 
-    free(die_face);
-    
-    
+    free( die_face );
+
     return 0;
 }
