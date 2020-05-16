@@ -5,7 +5,7 @@ stages:
 
 before_script:
   - apk update
-  - apk add bash gcc
+  - apk add bash gcc make
 
 test:
   stage: dev
