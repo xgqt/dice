@@ -5,7 +5,11 @@ stages:
 
 before_script:
   - apk update
-  - apk add bash gcc make musl-dev
+  - apk add bash
+  - apk add file
+  - apk add gcc
+  - apk add make
+  - apk add musl-dev
 
 test:
   stage: dev
