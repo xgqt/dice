@@ -1,0 +1,13 @@
+image: alpine:3
+
+stages:
+  - dev
+
+before_script:
+  - apk update
+  - apk add bash gcc
+
+test:
+  stage: dev
+  script:
+    - bash dev.sh
