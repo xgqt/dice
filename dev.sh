@@ -26,9 +26,12 @@ build() {
 }
 
 info() {
-    echo
-    echo "* About ${bin}:"
-    file "${bin}"
+    if command -v file >/dev/null
+    then
+        echo
+        echo "* About ${bin}:"
+        file "${bin}"
+    fi
 }
 
 run() {
@@ -54,6 +57,21 @@ if build
 then
     echo "* Build successful"
     info
-    run && echo "* Run successful"
-    clean && echo "* Clean successful"
+    if run
+    then
+        echo "* Run successful"
+    else
+        echo "* Run failed"
+        exit 1
+    fi
+    if clean
+    then
+        echo "* Clean successful"
+    else
+        echo "* Clean failed"
+        exit 1
+    fi
+else
+    echo "* Build failed"
+    exit 1
 fi
