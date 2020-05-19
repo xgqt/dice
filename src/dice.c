@@ -52,8 +52,6 @@ static char * dice_6 =
     " | o   o | \n"
     " '-------' \n";
 
-static char ** die_face = NULL;
-
 static char * long_help =
     "Usage: dice [OPTION]... [NUMBER]\n"
     "Rolls some dice. \n"
@@ -71,10 +69,10 @@ static char * long_help =
     "Licensed under the GNU GPL v3 license\n";
 
 static char * short_help =
-    "Usage: dice NUMBER\n";
+    "Usage: dice NUMBER";
 
 static char * version =
-    "dice version 1.0, (c) 2020 XGQT\n";
+    "dice version 1.0, (c) 2020 XGQT";
 
 
 int generate_number( void )
@@ -83,6 +81,8 @@ int generate_number( void )
     return rand() % 6 + 1;
 }
 
+
+static char ** die_face = NULL;
 
 void roll_dice( void )
 {
@@ -107,17 +107,17 @@ void roll_dice( void )
 // Put it all together
 int main( int argc, char ** argv )
 {
-    int rolls      = 1;
-
-    int small_roll = 0;
-    int none_roll  = 0;
-
     // Seed
     srand( time( NULL ) );
 
 
     if ( argc >= 2 )
         {
+            int rolls      = 1;
+
+            int small_roll = 0;
+            int none_roll  = 0;
+
             for ( int i = 0; i < argc; ++ i )
                 {
                     // Help
