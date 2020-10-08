@@ -10,49 +10,49 @@
 #include <time.h>
 
 
-static char * dice_1 =
+static const char * dice_1 =
     "  _______  \n"
     " |       | \n"
     " |   o   | \n"
     " |       | \n"
     " '-------' \n";
 
-static char * dice_2 =
+static const char * dice_2 =
     "  _______  \n"
     " | o     | \n"
     " |       | \n"
     " |     o | \n"
     " '-------' \n";
 
-static char * dice_3 =
+static const char * dice_3 =
     "  _______  \n"
     " | o     | \n"
     " |   o   | \n"
     " |     o | \n"
     " '-------' \n";
 
-static char * dice_4 =
+static const char * dice_4 =
     "  _______  \n"
     " | o   o | \n"
     " |       | \n"
     " | o   o | \n"
     " '-------' \n";
 
-static char * dice_5 =
+static const char * dice_5 =
     "  _______  \n"
     " | o   o | \n"
     " |   o   | \n"
     " | o   o | \n"
     " '-------' \n";
 
-static char * dice_6 =
+static const char * dice_6 =
     "  _______  \n"
     " | o   o | \n"
     " | o   o | \n"
     " | o   o | \n"
     " '-------' \n";
 
-static char * long_help =
+static const char * long_help =
     "Usage: dice [OPTION]... [NUMBER]\n"
     "Rolls some dice. \n"
     "\n"
@@ -68,10 +68,10 @@ static char * long_help =
     "Copyright (c) 2020, XGQT\n"
     "Licensed under the GNU GPL v3 license\n";
 
-static char * short_help =
+static const char * short_help =
     "Usage: dice NUMBER";
 
-static char * version =
+static const char * version =
     "dice version 1.0, (c) 2020 XGQT";
 
 
