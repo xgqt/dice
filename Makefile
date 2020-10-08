@@ -1,16 +1,16 @@
-BIN	= dice
-MAN	= $(BIN).1
+BIN       = dice
+MAN       = $(BIN).1
 
-DESTDIR =
-PREFIX	= /usr
-INSTDIR	= $(DESTDIR)$(PREFIX)
-INSTBIN	= $(INSTDIR)/bin
-INSTMAN	= $(INSTDIR)/share/man/man1
+DESTDIR   =
+PREFIX    = /usr
+INSTDIR   = $(DESTDIR)$(PREFIX)
+INSTBIN   = $(INSTDIR)/bin
+INSTMAN   = $(INSTDIR)/share/man/man1
 
-CC	= gcc
-SRCDIR	= src
-SRC	= $(BIN).c
-CFLAGS	= -std=c99 -Wall -Wextra -pipe -O2
+CC        = gcc
+SRCDIR    = src
+SRC       = $(BIN).c
+CFLAGS   += -std=c99 -Wall -Wextra -pedantic -pipe -O2
 
 
 .PHONY: all debug clean install uninstall
