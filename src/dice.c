@@ -118,7 +118,7 @@ int main( int argc, char ** argv )
             int small_roll = 0;
             int none_roll  = 0;
 
-            for ( int i = 0; i < argc; ++ i )
+            for ( int i = 1; i < argc; ++ i )
                 {
                     // Help
                     if ( ! strcmp( argv[i], "-h" ) )
@@ -140,11 +140,13 @@ int main( int argc, char ** argv )
                     // Dice size selection
                     else if ( ( ! strcmp( argv[i], "-s" ) ) || ( ! strcmp( argv[i], "--small" ) ) )
                         {
+                            none_roll = 0;
                             small_roll = 1;
                         }
                     else if ( ( ! strcmp( argv[i], "-0" ) ) || ( ! strcmp( argv[i], "--none" ) ) )
                         {
                             none_roll = 1;
+                            small_roll = 0;
                         }
                     // Assume other args are numbers
                     else
