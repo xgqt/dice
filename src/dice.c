@@ -10,42 +10,42 @@
 #include <time.h>
 
 
-static const char * dice_1 =
+static char * dice_1 =
     "  _______  \n"
     " |       | \n"
     " |   o   | \n"
     " |       | \n"
     " '-------' \n";
 
-static const char * dice_2 =
+static char * dice_2 =
     "  _______  \n"
     " | o     | \n"
     " |       | \n"
     " |     o | \n"
     " '-------' \n";
 
-static const char * dice_3 =
+static char * dice_3 =
     "  _______  \n"
     " | o     | \n"
     " |   o   | \n"
     " |     o | \n"
     " '-------' \n";
 
-static const char * dice_4 =
+static char * dice_4 =
     "  _______  \n"
     " | o   o | \n"
     " |       | \n"
     " | o   o | \n"
     " '-------' \n";
 
-static const char * dice_5 =
+static char * dice_5 =
     "  _______  \n"
     " | o   o | \n"
     " |   o   | \n"
     " | o   o | \n"
     " '-------' \n";
 
-static const char * dice_6 =
+static char * dice_6 =
     "  _______  \n"
     " | o   o | \n"
     " | o   o | \n"
