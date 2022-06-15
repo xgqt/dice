@@ -1,5 +1,5 @@
 /*************************************************/
-/* Copyright (c) 2020 XGQT <xgqt@riseup.net> */
+/* Copyright (c) 2020 XGQT <xgqt@riseup.net>     */
 /* Licensed under the GNU GPL v3 license         */
 /*************************************************/
 
